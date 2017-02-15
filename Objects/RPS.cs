@@ -24,6 +24,14 @@ namespace RPSGame.Objects
       {
         _inputList.Add("It's a tie");
       }
+      else if (((_player1Input == "rock") && (_player2Input == "scissors")) || ((_player1Input == "scissors") && (_player2Input == "paper")) || ((_player1Input == "paper") && (_player2Input == "rock")))
+      {
+        _inputList.Add("Player 1 wins!");
+      }
+      else if (((_player2Input == "rock") && (_player1Input == "scissors")) || ((_player2Input == "scissors") && (_player1Input == "paper")) || ((_player2Input == "paper") && (_player1Input == "rock")))
+      {
+        _inputList.Add("Player 2 wins!");
+      }
       return _inputList;
     }
 
