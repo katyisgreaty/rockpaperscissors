@@ -1,18 +1,20 @@
 @{
     Layout="Shared/_Layout.cshtml";
 }
+  <div class="space">
 
-  @if(@Model != null) {
-    <h1>Your Game Results:</h1>
-    <div class="row">
-    @foreach(string item in @Model)
-    {
-      <div class="col-md-4">
-        <h5>@item</h5>
-      </div>
+    @if(@Model != null) {
+      <h1>Your Game Results:</h1>
+      <div class="row">
+      @foreach(string item in @Model)
+      {
+        <div class="col-md-4">
+          <h2>@item</h2>
+        </div>
+      }
+    </div>
     }
   </div>
-  } 
 
 <form action="/" method="post">
   <div class="form-group">
