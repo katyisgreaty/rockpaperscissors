@@ -11,15 +11,16 @@ namespace RPSGame.Objects
     private List<string> _inputList = new List<string>();
     private List<string> _computerPlay = new List<string> { "rock", "paper", "scissors" };
 
-    public RPS (string player1Input, string player2Input)
+    public RPS (string player1Input)
     {
       _player1Input = player1Input;
-      _player2Input = player2Input;
+      Random comp = new Random();
+      int index = comp.Next(0, 3);
+      _player2Input = _computerPlay[index];
     }
 
     public List<string> GameMethod()
     {
-      Console.WriteLine(_computerPlay[0]);
       _inputList.Add(_player1Input);
       _inputList.Add(_player2Input);
       if(_player1Input == _player2Input)

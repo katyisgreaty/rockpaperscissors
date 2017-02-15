@@ -14,8 +14,8 @@ namespace RPSGame
       };
       Post["/"] = _ => {
         string player1Input = Request.Form["player1"];
-        string player2Input = Request.Form["player2"];
-        RPS newRPS = new RPS(player1Input, player2Input);
+        // string player2Input = Request.Form["player2"];
+        RPS newRPS = new RPS(player1Input);
         List<string> newResults = newRPS.GameMethod();
         return View["index.cshtml", newResults];
       };
