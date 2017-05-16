@@ -1,3 +1,7 @@
+#Rock Paper Scissors
+
+##By Katy Daviscourt and Kaz Matthews, 2.15.17
+
 Specs:
 
 * _Program returns the users' input as an output_
