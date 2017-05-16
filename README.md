@@ -1,6 +1,7 @@
-#Rock Paper Scissors
+# Rock Paper Scissors
 
-##By Katy Daviscourt and Kaz Matthews, 2.15.17
+
+#### _Katy Daviscourt and Kaz Matthews, 2.15.17_
 
 Specs:
 
